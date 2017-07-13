@@ -60,6 +60,7 @@ class InfiniteCircularView: UIView {
             pageControl.currentPageIndicatorTintColor = UIColor.clear
             stopTimer()
         }else{
+            stopTimer()
             contentCollectionView.reloadData()
             contentCollectionView.scrollToItem(at: IndexPath(item: 0, section: totalSections/2), at: .left, animated: false)
             contentCollectionView.isScrollEnabled = true
